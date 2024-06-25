@@ -11,7 +11,7 @@ import  'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.
 import  'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css'  ;
 
 class Productlist extends React.Component<any, any> {
-    columnDefs: any = [{ dataField: 'productname', text: 'Product Name' },{ dataField: 'price', text: 'Productprice' },{ dataField: 'details', text: 'Product details' },];
+    columnDefs: any = [{ dataField: 'productname', text: 'Product name' },{ dataField: 'price', text: 'Productprice' },{ dataField: 'details', text: 'Product details' },];
     test = new service ("");
     constructor(props:any){
     super(props);
@@ -54,13 +54,15 @@ class Productlist extends React.Component<any, any> {
     <>
         <h2 className="screen-align">productlist</h2>
         <div>
-    <div id="template-i4hr">
-        <div id="template-ih8u">
-            <div>
-                <BootstrapTable keyField='_id' data={this.state.rowData} columns={this.columnDefs}
-                rowEvents={this.rowclick} pagination={paginationFactory({ sizePerPageList:
-                [{ text: '5', value: 5 }, { text: '25', value: 25 }, { text: '50', value:
-                50 }], } ) } />
+    <div id="template-ijax">
+        <div id="template-i4hr">
+            <div id="template-ih8u">
+                <div>
+                    <BootstrapTable keyField='_id' data={this.state.rowData} columns={this.columnDefs}
+                    rowEvents={this.rowclick} pagination={paginationFactory({ sizePerPageList:
+                    [{ text: '5', value: 5 }, { text: '25', value: 25 }, { text: '50', value:
+                    50 }], } ) } />
+                </div>
             </div>
         </div>
     </div>

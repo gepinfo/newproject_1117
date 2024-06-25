@@ -251,7 +251,7 @@ services:
     image: systementry-1117
     container_name: systementry-1117
     ports: 
-      - 8014:8014
+      - 8016:8016
     env_file: .env
     depends_on:
       - mongo
@@ -272,7 +272,7 @@ services:
     image: products-1117
     container_name: products-1117
     ports: 
-      - 8015:8015
+      - 8017:8017
     env_file: .env
     depends_on:
       - mongo
